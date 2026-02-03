@@ -7,6 +7,9 @@ for (let i = 0; i < divLength; i++) {
     const demo = document.querySelectorAll(".song")[i];
     demo.addEventListener("click", playsong);
 
+    const demo1 = document.querySelectorAll(".song")[i];
+    demo.addEventListener("dblclick", pausesong);
+
 }
 
 let song1 = new Audio();
@@ -38,6 +41,7 @@ song9.src = "music/back_to_your_side.mp3";
 
 function playsong() {
     let songId = this.innerHTML;
+    
 
     switch (songId) {
         case "a":
@@ -80,5 +84,55 @@ function playsong() {
         default:
             console.log("wrong input");
             break;
+    }  
+}
+
+function pausesong() {
+    let songId = this.innerHTML;
+    
+
+    switch (songId) {
+        case "a":
+            song1.pause();
+            break;
+
+        case "b":
+            song2.pause();
+            break;
+        
+        case "c":
+            song3.pause();
+            break;    
+         
+        case "d":
+            song4.pause();
+            break;   
+            
+        case "e":
+            song5.pause();
+            break;     
+            
+        case "f":
+            song6.pause();
+            break;    
+
+        case "g":
+            song7.pause();
+            break;  
+
+        case "h":
+            song8.pause();
+            break; 
+
+        case "i":
+            song9.pause();
+            break;     
+
+
+        default:
+            console.log("wrong input");
+            break;
+
+
     }
 }
