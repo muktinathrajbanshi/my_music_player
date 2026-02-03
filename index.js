@@ -10,7 +10,7 @@ for (let i = 0; i < divLength; i++) {
 }
 
 let song1 = new Audio();
-song1.src = "music/back_to_your_side.mp3";
+song1.src = "music/you_are_my_light.mp3";
 
 let song2 = new Audio();
 song2.src = "music/can_a_promise_be_undone.mp3";

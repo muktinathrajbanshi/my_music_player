@@ -100,7 +100,7 @@ main {
 }
 
 .a {
-  background-image: url("images/backtoyourside.png");
+  background-image: url("images/yourmylight.png");
 }
 .b {
   background-image: url("images/canapromisebeundone.png");
@@ -124,5 +124,5 @@ main {
   background-image: url("images/velvetnight.png");
 }
 .i {
-  background-image: url("images/yourmylight.png");
+  background-image: url("images/backtoyourside.png");
 }
