@@ -87,11 +87,23 @@ main {
   z-index: 2;
 }
 
+.song.playing::after {
+  content: "⏸";
+  opacity: 1;
+  transform: scale(1);
+}
+
 .song:hover {
   transform: translateY(-10px) scale(1.03);
   box-shadow:
     0 25px 60px rgba(0, 242, 255, 0.25),
     0 0 0 1px rgba(0, 242, 255, 0.3);
+  opacity: 1;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
 }
 
 .song:hover::after {
